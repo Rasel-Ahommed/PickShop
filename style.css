@@ -1,0 +1,772 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+ }
+
+ /*     =====================================================================================
+                                Login & Sign up page design start
+        =====================================================================================*/
+
+section.login {
+    background-image: linear-gradient(to right, #fc4a1a, #fd6b12, #fc8712, #faa01f, #f7b733);
+    height: 100vh;
+    width: 100vw;
+}
+
+/*join Us section*/
+
+.login .continer {
+    width: 1000px;
+    height: 100vh;
+    margin-left: 136px;
+}
+.continer .joinUs {
+    float: left;
+    text-align: center;
+    margin-top: 168px;
+    margin-left: 90px;
+}
+.joinUs img {
+    width: 45px;
+    margin: 20px;
+}
+
+.joinUs h3 {
+    color: white;
+    font-size: 30px;
+}
+.joinUs p {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+#button {
+    background: white;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 17px;
+    border: none;
+}
+
+/*login section*/
+
+.continer .loginBox {
+    width: 520px;
+    height: 350px;
+    background: white;
+    float: right;
+    margin-top: 120px;
+    margin-right: 42px;
+    border-radius: 60px;
+}
+.loginBox h2 {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: arial black;
+    text-decoration: underline;
+}
+.loginBox lable {
+    margin: 64px;
+    font-weight: bold;
+}
+.loginBox input {
+    width: 380px;
+    padding: 9px;
+    margin: 9px 62px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+.loginBox .loginBtn{
+    margin: 8px 203px;
+    width: 114px;
+    background: #fc4f19;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+ /*     =====================================================================================
+                                   Home page design start
+        =====================================================================================*/
+ 
+ /*background*/
+ .landing{
+    background-image:url('asset/img/background.jpg');
+    width:  98.7vw;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+ }
+
+/*nav bar section*/
+ nav.manu {
+    width: 100%;
+    height: 60px;
+    background: black;
+    position: fixed;
+    z-index: 1;
+}
+.logo img {
+    width: 139px;
+    float: left;
+    margin: 1px 34px;
+}
+.manuItem {
+    float: right;
+    margin-right: 135px;
+}
+.manuItem ul {
+    list-style: none;
+    display: flex;
+}
+.manuItem a {
+    text-decoration: none;
+    color: white;
+}
+.manuItem li {
+    padding: 19px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.manuItem li:hover{
+    background: #0ca5b9;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/*search section*/
+.search {
+    margin-top: 70px;
+    margin-right: 15px;
+    float: right;
+}
+.search input[type="text"] {
+    width: 241px;
+    padding: 12px;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    border: none;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 10px;
+}
+.searchBtn {
+    width: 65px;
+    background: #1967c8;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+/*head line section*/
+button.strtSpn {
+    cursor: pointer;
+    background: #e23dbe;
+    color: white;
+    padding: 14px;
+    font-size: 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 362px;
+    margin-left: -20px;
+    border: none;
+}
+
+/*left bar section*/
+div#manuLine {
+    float: left;
+    margin-top: 52px;
+}
+.manu_line img {
+    width: 35px;
+    height: 25px;
+    margin-top: 22px;
+    margin-left: 19px;
+    cursor: pointer;
+}
+.leftBar {
+    width: 188px;
+    height: 84.5vh;
+    background: #7393e0;
+    float: left;
+    margin-top: 61px;
+    border-radius: 2px;
+    margin-left: -54px;
+    position: relative;
+    z-index: 0;
+    transition:all .5s;
+    transform:scaleX(0);
+    transform-origin:left;
+    opacity:0;  
+}
+.leftBar .cancle {
+    width: 33px;
+    float: right;
+    cursor: pointer;
+}
+.leftBar .avatar {
+    margin: 16px 25px;
+    display: flex;
+    justify-content: center;
+    width: 133px;
+    height: 86px;
+    border-radius: 39px;
+}
+.avatar img {
+    width: 62%;
+    border-radius: 50px;
+}
+.leftBar h3 {
+    text-align: center;
+}
+.edit {
+    width: 24px;
+    float: right;
+    margin-top: -24px;
+    cursor: pointer;
+}
+.items {
+    margin-top: 33px;
+}
+.itm {
+    width: 100%;
+    padding: 7px 7px;
+    margin-top: 2px;
+    border-bottom: 1px solid #877f7f;
+}
+.itm:hover{
+    background: #817f7f;
+}
+.items ul {
+    list-style: none;
+}
+.items a {
+    color: white;
+    text-decoration: none;
+}
+.items li {
+    padding: 1px 12px;
+}
+.logout {
+    width: 14px;
+    margin: -1px;
+    margin-right: 3px;
+}
+
+/*Items section design start*/
+section.itemPage {
+    height: 100%;
+    width: 98.7vw;
+    background: #eeecae;
+    padding: 42px 42px;
+}
+.itemContiner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35px;
+}
+.itemPage h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.item {
+    width: 247px;
+    height: 340px;
+    background: #ffff;
+    float: left;
+    margin: 7px 5px;
+    border-radius: 5px;
+}
+.item:hover{
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 10px; 
+}
+.item img {
+    width: 100%;
+    height: 188px;
+    border-radius: 5px;
+    padding: 0px 0px;
+    margin-left: 0px;
+}
+.item h4 {
+    text-align: center;
+    color: black;
+}
+.item h5 {
+    text-align: center;
+    font-size: 18px;
+    color: blue;
+}
+.item h6 {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+.item p {
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 2px;
+    color: #faca51;
+    font-size: 17px;
+}
+#buy {
+    color: white;
+    padding: 10px;
+    width: 70px;
+    float: left;
+    margin: 5px 94px;
+    background: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Footer section design start*/
+section.footer{
+    width: 98.7vw;
+    height: 230px;
+    background: #2e2e54;
+}
+.footerContiner {
+    margin: 0px 60px;
+    padding-top: 38px;
+    color: white;
+    float: left;
+}
+.footerContiner h3 {
+    margin: 10px 0px;
+}
+.footerContiner li {
+    list-style: none;
+    margin-bottom: -32px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.footerContiner li:hover{
+    text-decoration: underline;
+}
+.DwnApp {
+    float: left;
+    margin: 42px 145px;
+    color: white;
+}
+.DwnApp img {
+    width: 140px;
+}
+.DwnApp p {
+    padding: 5px 0;
+    cursor: pointer;
+}
+.DwnApp p:hover{
+    text-decoration: underline;
+}
+
+/*add to card page design*/
+.buyItem {
+    position: absolute;
+    width: 93%;
+    margin: 98px 44px;
+    background: white;
+    padding: 21px;
+}
+.buy {
+    float: left;
+    margin-left: 10px;
+}
+.buyItem img {
+    float: left;
+    margin: 15px 8px 0 0px;
+    width: 300px;
+}
+
+.buyItem h4 {
+    font-size: 26px;
+    margin: 15px 0px;
+}
+
+.buyItem h5 {
+    font-size: 30px;
+    color: tomato;
+}
+
+.buyItem del {
+    font-size: 20px;
+}
+
+.buyItem p {
+    color: gold;
+    font-size: 25px;
+    padding: 6px 0px;
+}
+.sideNote {
+    margin-left: 38px;
+    margin-top: 10px;
+    float: left;
+}
+.sideNote h4 {
+    font-size: 18px;
+    margin: 11px 0px;
+}
+#changeP {
+    color: black;
+    font-size: 18px;
+    padding: 0;
+}
+
+/*show cart*/
+.cart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cart tbody {
+    background: white;
+}
+.cart td {
+    width: 600px;
+    padding: 10px;
+}
+.cart img {
+    width: 108px;
+    float: left;
+}
+h1.cardHead {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    font-size: 28px;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+/*    =====================================================================================
+                                   Team page design start
+        =====================================================================================*/
+ 
+section.team {
+    background: #d8e1ff;
+    width: 98.7vw;
+    height: 100%;
+}
+.team h1 {
+    text-align: center;
+    padding: 99px 0 50px 0;
+    font-size: 32px;
+    text-decoration: underline;
+}
+.mamberCont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+}
+.member {
+    width: 238px;
+    height: 320px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.member:hover{
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 10px; 
+}
+.member img {
+    width: 110px;
+    height: 108px;
+    border-radius: 84px;
+    margin: 18px 64px;
+}
+.member h3 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+.member p {
+    line-height: 27px;
+    text-align: center;
+}
+
+ /* =====================================================================================
+                                  Admin Dashboard page design start
+    =====================================================================================*/
+section.adminDashboard {
+    width: 98.7vw;
+    height: 100%;
+    background: #f0f1f2;
+}
+/*top bar*/
+.topBar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: white;
+}
+.topBar .logo {
+    width: 245px;
+    height: 100%;
+    background: #111827;
+    float: left;
+}
+.user {
+    float: right;
+    padding: 17px 0px;
+    margin-right: 29px;
+    width: 230px;
+    border-right: 2px solid #f9fafb;
+
+}
+.user a {
+    text-decoration: none;
+    color: black;
+}
+.user img {
+    float: left;
+    width: 46px;
+}
+.user p {
+    padding: 4px 0;
+}
+.logOut {
+    float: right;
+    padding: 19px 4px;
+}
+.logOut img {
+    width: 18px;
+    margin-right: 17px;
+}
+/*side manu bar*/
+.sidemanu {
+    position: fixed;
+    background: #1f2937;
+    color: white;
+    float: left;
+    height: 89.5vh;
+    width: 245px;
+    margin-top: 60px;
+    margin-right: 22px;
+}
+.sidemanu p {
+    font-size: 12px;
+    color: black;
+    margin: 15px 0;
+    background: #07bdcf;
+    padding: 7px;
+    font-weight: bold;
+    width: 100%;
+}
+.sidemanu a {
+    text-decoration: none;
+    color: #ccced8;
+}
+.dashboard {
+    height: 45px;
+    padding: 13px 20px;
+}
+.dashboard:hover{
+    background: #374151;
+}
+.dashboard span {
+    font-size: 16px;
+}
+#highlite{
+    background: #374151;
+}
+/*admin body*/
+.adminHead h1 {
+    text-align: center;
+    padding: 82px 0px 27px 218px;
+    font-size: 30px;
+}
+.fill {
+    width: 100%;
+    height: 53px;
+    background: white;
+    margin-bottom: 25px;
+}
+.dtlsContiner {
+    display: flex;
+    justify-content: center;
+    margin-left: 241px;
+}
+.dtlsBox {
+    background: white;
+    width: 309px;
+    height: 9rem;
+    margin: 0 11px;
+    border-radius: 5px;
+}
+.left {
+    padding: 45px 37px;
+    float: left;
+}
+.left p {
+    font-size: 20px;
+    color: #6b7280;
+}
+
+.left h1 {
+    font-size: 29px;
+}
+.right {
+    float: right;
+    padding: 50px 40px;
+}
+.right img {
+    width: 38px;
+}
+/*Performance*/
+.parformHead {
+    background: white;
+    margin: 26px 24px 0px 265px;
+    border-radius: 5px 5px 0px 0px;;
+}
+.parformHead h3 {
+    padding: 12px 38px;
+}
+.parformBody {
+    background: white;
+    margin: 5px 24px 0px 265px;
+    border-radius: 0px 0px 5px 5px;
+    height: 475px;
+}
+.parformBody  img {
+    width: 100%;
+    height: 100%;
+}
+#Adminfooter {
+    height: 230px;
+    background: #2e2e54;
+    margin-left: 245px;
+}
+
+/* =====================================================================================
+                                  Manage Users page design start
+    =====================================================================================*/
+.userList {
+    width: 100vw;
+}
+.tableHead {
+    background: white;
+    margin: 26px 29px 2px 265px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+}
+.tableHead h1 {
+    padding: 20px;
+}
+.content-table {
+    background: white;
+    margin: 0 0 0 265px;
+    width: 74.5%;
+}
+.content-table th {
+    padding: 9px;
+}
+.content-table td {
+    padding: 14px;
+    text-align: center;
+}
+.content-table tbody tr:nth-of-type(odd){
+    background: #f3f4f6;
+}
+
+.content-table img {
+    width: 28px;
+}
+#eye {
+    width: 48px;
+    margin: 0 8px 0px -18px;
+}
+
+/* =====================================================================================
+                                  Add Product page design start
+    =====================================================================================*/
+
+.addProduct {
+    display: flex;
+    justify-content: center;
+    padding-left: 181px;
+}
+.addArea {
+    background: white;
+    font-weight: bold;
+    width: 604px;
+    border-radius: 10px;
+    padding: 0 36px;
+}
+.addProduct {
+    display: flex;
+    justify-content: center;
+    padding-left: 181px;
+    padding-top: 30px;
+}
+.addProduct h1 {
+    text-align: center;
+    padding: 27px 0px;
+    font-size: 29px;
+}
+input.p_title {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    background: #f0f1f2;
+    border-radius: 5px;
+    margin: 7px 0px;
+}
+textarea{
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    background: #f0f1f2;
+    border-radius: 5px;
+    margin: 7px 0px;
+}
+#addProduct{
+    padding: 8px;
+    width: 267px;
+    margin: 7px 0px;
+    background: #f0f1f2;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.AdminSubmit{
+    background: #07bdcf;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; 
+    padding: 18px 50px; 
+}
+/* =====================================================================================
+                                  manage Product page design start
+    =====================================================================================*/
+#deletebtn{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    margin: 0 10px;
+}
